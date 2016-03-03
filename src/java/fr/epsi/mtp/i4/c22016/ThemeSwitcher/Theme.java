@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.epsi.mtp.i4.c22016.models;
+package fr.epsi.mtp.i4.c22016.ThemeSwitcher;
  
 public class Theme {
  

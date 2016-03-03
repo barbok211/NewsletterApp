@@ -5,7 +5,6 @@
  */
 package fr.epsi.mtp.i4.c22016.ThemeSwitcher;
 
-import fr.epsi.mtp.i4.c22016.models.Theme;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
