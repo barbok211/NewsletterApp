@@ -53,3 +53,13 @@ glassfish-web.xml
 private.xml
 /build
 nbproject/private/private.xml
+nbproject/build-impl.xml
+nbproject/private/private.properties
+web/welcomePrimefaces_3.xhtml
+web/welcomePrimefaces.xhtml
+web/welcomePrimefaces_1.xhtml
+web/welcomePrimefaces_2.xhtml
+nbproject/project.xml
+nbproject/project.properties
+nbproject/genfiles.properties
+web/WEB-INF/lib/primefaces-5.0.jar
