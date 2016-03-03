@@ -63,3 +63,5 @@ nbproject/project.xml
 nbproject/project.properties
 nbproject/genfiles.properties
 web/WEB-INF/lib/primefaces-5.0.jar
+nbproject/ant-deploy.xml
+nbproject/customs.json
