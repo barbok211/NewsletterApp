@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.epsi.mtp.i4.c22016.ThemeSwitcher;
+package fr.epsi.mtp.i4.c22016.beans;
 
+import fr.epsi.mtp.i4.c22016.models.Receiver;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
@@ -21,37 +22,40 @@ import org.primefaces.event.TransferEvent;
 import org.primefaces.event.UnselectEvent;
 import org.primefaces.model.DualListModel;
 
-@Named(value = "pickListView")
+@Named(value = "receiverPickListView")
 @ManagedBean
 @SessionScoped
 public class PickListView {
           
-    private DualListModel<String> cities;
+    private DualListModel<Receiver> receivers;
      
     @PostConstruct
     public void init() {
-        //Cities
-        List<String> citiesSource = new ArrayList<String>();
-        List<String> citiesTarget = new ArrayList<String>();
+        //users
+        List<Receiver> receiverSource = new ArrayList<Receiver>();
+        List<Receiver> receiverTarget = new ArrayList<Receiver>();
          
-        citiesSource.add("San Francisco");
-        citiesSource.add("London");
-        citiesSource.add("Paris");
-        citiesSource.add("Istanbul");
-        citiesSource.add("Berlin");
-        citiesSource.add("Barcelona");
-        citiesSource.add("Rome");
-         
-        cities = new DualListModel<>(citiesSource, citiesTarget);
+        //receiverSource.add();
+     /*    public List<String> getAllStickers() {
+   List<String> allStickers = new ArrayList<>();
+   Client client = ClientBuilder.newClient();
+   WebTarget target = client.target("http://localhost:8080/sticker-story-rest-server/rest/stickers");
+   JsonArray response = target.request(MediaType.APPLICATION_JSON).get(JsonArray.class);
+   for (JsonValue sticker : response) {
+      allStickers.add(((JsonString) sticker).getString());  
+   }
+   return allStickers;
+}*/
+        receivers = new DualListModel<>(receiverSource, receiverTarget);
          
     }
  
-    public DualListModel<String> getCities() {
-        return cities;
+    public DualListModel<Receiver> getReceivers() {
+        return receivers;
     }
  
-    public void setCities(DualListModel<String> cities) {
-        this.cities = cities;
+    public void setReceivers(DualListModel<Receiver> receivers) {
+        this.receivers = receivers;
     }
  
  
